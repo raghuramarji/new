@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../react project/prop"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "vs"
+	}
+}

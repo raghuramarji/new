@@ -1,0 +1,72 @@
+.activee {
+    opacity: 1;
+    pointer-events: all; /* Allow interactions */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+.deactive {
+    opacity: 0;
+    pointer-events: none; /* Disable interactions */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+.edu {
+    margin: 3% 5%;
+    padding-top: 1%;
+}
+
+.edu-body {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 2%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+}
+
+.edu-slider {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.edu-card {
+    flex: 0 0 300px;
+    margin: 0 14px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 1s ease, scale 0.3s ease;
+    opacity: 0.8;
+    background-color: rgba(49, 94, 124, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.edu-card h2 {
+    font-size: 1.5em;
+}
+
+.edu-card p, .edu-card h3 {
+    font-size: 1.1em;
+}
+
+.edu-card.active {
+    transform: scale(1.1);
+    border-radius: 10px;
+    opacity: 1;
+    background-color: rgba(49, 94, 124, 0.8);
+    border-color: #333;
+}
+
+.edu-card.inactive {
+    transform: scale(0.8);
+    opacity: 0.6;
+    background-color: rgba(49, 94, 124, 0.8);
+}
+
+.edu-slider:hover .edu-card {
+    cursor: pointer;
+}
