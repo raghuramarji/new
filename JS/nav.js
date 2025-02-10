@@ -42,7 +42,7 @@ black.addEventListener('click', (event) => {
         backgrd = 'black';
         document.body.style.backgroundImage = 'url("../img/bg3_abstract.jpg")';
         main.classList.add('dark');
-        img.src = "../img/svg/weather-10.svg";  // Change image source when background is black
+        img.src = "img/svg/weather.svg";  // Change image source when background is black
         console.log('black');
         
         
@@ -51,7 +51,7 @@ black.addEventListener('click', (event) => {
         backgrd = 'white';
         document.body.style.backgroundImage = 'url("../img/bg2_abstract.jpg")';
         main.classList.remove('dark');
-        img.src = "../img/svg/weather-46.svg";  // Change image source back to original
+        img.src = "img/svg/weather-46.svg";  // Change image source back to original
         console.log('white');
     }
 });
